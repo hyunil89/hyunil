@@ -25,6 +25,7 @@ print("str_arr type:\n", str_arr.dtype)
 ###
 print("\n다른 ndarray의 타입 복사")
 int_array = np.arange(10)
+print("before int_array :\n", int_array)
 calibers = np.array([.22, .270], dtype=np.float64)
 int_array = int_array.astype(calibers.dtype)
 print("int_array :\n", int_array)
