@@ -46,10 +46,15 @@ print(np.asarray(data1) is data1)  #data1은 nparray가 아니기 때문에 Fals
 
 #ones_like : return an array of ones with shape and type of input
 #ones : return a new array setting values to one
-arr_zeros=np.zeros(10)
-print("ones(10): ", arr_zeros)
+arr_ones=np.ones(10)
+print("ones(10): ", arr_ones)
+print(arr_ones.dtype)
 print("ones_like(10): ", np.ones_like(10))
-print("ones_like(arr): ", np.ones_like(arr_zeros))
+float_arr = np.random.randn(10)
+#float_arr = [3, 5, 6]
+print(float_arr.dtype)
+#print("ones(arr) : ", np.ones(float_arr))    #ValueError : negative dimensions are not allowed
+print("ones_like(arr): ", np.ones_like(float_arr))
 
 #eye, identity : 단위행렬
 print("eye:\n ", np.eye(10))
