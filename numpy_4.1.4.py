@@ -31,6 +31,7 @@ print("\n2차원 배열 ")
 
 arr2d = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 print("arr2d:\n", arr2d)
+print("arr2d[2]:\n", arr2d[2])
 
 print("\n개별 요소 접근")
 print("arr2d[0][2]: ", arr2d[0][2])
