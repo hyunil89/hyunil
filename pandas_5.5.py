@@ -6,7 +6,7 @@ import numpy as np
 
 # MultiIndex를 색인으로 하는 Series, 색인의 계층을 보여주고 있음
 data = Series(np.random.randn(10), index=[['a', 'a', 'a', 'b', 'b', 'b', 'c', 'c', 'd', 'd'],
-                                           1, 2, 3, 1, 2, 3, 1, 2, 2, 3]])
+                                           [1, 2, 3, 1, 2, 3, 1, 2, 2, 3]])
 
 # 바로 위 단계의 색인을 이용해 하위 계층 직접 접근 가능
 data.index
@@ -37,6 +37,6 @@ frame
 frame['Ohio']
 
 # MultiIndex는 따로 생성 후에도 재사용 가능 위에것은 다음과 같이 표현 가능
-MultiIndex.from_arrays([['Ohio', 'Ohio', 'Colorado'], ['Green', 'Red', 'Green']],
+pd.MultiIndex.from_arrays([['Ohio', 'Ohio', 'Colorado'], ['Green', 'Red', 'Green']],
                        names=['state', 'color'])
 

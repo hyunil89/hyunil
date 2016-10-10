@@ -11,7 +11,7 @@ frame = DataFrame({'a': range(7), 'b': range(7, 0, -1),
 # set_index : 하나 이상의 칼럼을 색인으로 하는 새로운 DataFrame을 생성
 # 위의 frame에서 c, d를 색인으로 하는 새로운 frame2 생성
 frame2 = frame.set_index(['c', 'd'])
-
+frame2
 # 원래 c, d 값을 살리려면 drop=False
 frame.set_index(['c', 'd'], drop=False)
 

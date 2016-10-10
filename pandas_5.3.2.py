@@ -13,7 +13,7 @@ uniques
 # value_counts : Series에서 도수를 계산하여 반환, 내림차순 정렬
 # pandas 최상위 메소드로 어떤 배열이나 순차 자료 구조에서도 사용 가능
 obj.value_counts()
-obj.value_counts(obj.values, sort=False) # sort안하고 그냥 출력
+pd.value_counts(obj.values, sort=False) # sort안하고 그냥 출력
 
 # isin : 어떤 값이 Series에 있는지 나타내는 불리언 벡터 반환
 mask = obj.isin(['b', 'c'])

@@ -21,7 +21,7 @@ df.fillna(0, inplace=True)
 df
 
 # ffill
-df = DataFrame(np.random.rnadn(6, 3))
+df = DataFrame(np.random.randn(6, 3))
 df.ix[2:, 1] = NA; df.ix[4:, 2] = NA
 df
 
